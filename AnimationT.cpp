@@ -2,7 +2,8 @@
 
 #include <math.h>
 #include <GL/glut.h>
-#include "TrukUtama.cpp"
+
+#include "MasterT.cpp"
 
 //ini menampilkan sekaligus animasi truk mainnya truklah
 void AnimatorTruk(){
