@@ -1,2 +1,2 @@
 # Truck-3D-OpenGL
-Complete Truck 3D program with tracks, skies and other parts
+A 3D truck program that can move straight ahead and and is equipped with track, terrain, sky and other assets assets.
