@@ -15,7 +15,9 @@
 
 #include "FieldT.cpp"
 #include "ParckingT.cpp"
+#include "ParckingMiniT.cpp"
 #include "AnimationT.cpp"
+#include "SpbuT.cpp"
 
 float angle=0.0, deltaAngle = 0.0, ratio;
 float x=0.0f,y=1.75f,z=15.0f; // posisi awal kamera
@@ -132,11 +134,27 @@ void display() {
 		tombol();
 		AnimatorTruk();
 	glPopMatrix();
+	glPushMatrix();
+	glTranslatef(25,0,-20);
+	glRotated(-90,0,1,0);
+		MiniTrukParkir();
+	glPopMatrix();
+	
+	glPushMatrix();
+	glTranslatef(10,0,-17);
+		MiniTrukParkir();
+	glPopMatrix();
+	
 	TrukParkir();
 	Grid();
+	glPushMatrix();
+	glTranslatef(0,-0.25,0);
+		SPBU();
+	glPopMatrix();
 	glutSwapBuffers();
 	glFlush();
 }
+
 void pressKey(int key, int x, int y) {
 // Fungsi ini akan dijalankan saat tombol keyboard ditekan dan belum dilepas
 // Selama tombol ditekan, variabel angle dan move diubah => kamera bergerak
