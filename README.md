@@ -4,8 +4,9 @@ A 3D truck program that can move straight ahead and and is equipped with track, 
 
 ## 🛠 Tools / Library Used
 
-- **HTML (Hypertext Markup Language)**
-- **CSS (Cascading Style Sheet)**
+- **C++**
+- **Dev-C++**
+- **Open-GL**
 
 ## 📛 Badges
 
